@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a variety of movie reviews with insights and ratings">
+    <title>Movie Reviews</title>
+    
+
+
+    <!-- Fonts and Icons -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .review-card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .review-card:hover {
+            transform: scale(1.05);
+        }
+        .review-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+        .review-content {
+            padding: 15px;
+        }
+        .review-content h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .review-content p {
+            font-size: 14px;
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .review-content .rating {
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div id="site-content">
+        <header class="site-header">
+            <div class="container">
+                <a href="index.html" id="branding">
+                    <img src="images/logo.png" alt="Movie Review Logo" class="logo">
+                    <div class="logo-copy">
+                        <h1 class="site-title">Sharat Movie Reviews</h1>
+							<small class="site-description">Discover the best review in Cinema</small>
+                    </div>
+                </a>
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item current-menu-item"><a href="about.html">About</a></li>
+                        <li class="menu-item current-menu-item"><a href="review.html">Movie Reviews</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-navigation"></div>
+            </div>
+            
+        </header>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="reviews-container">
+                    <!-- Bazooka -->
+                    <a href="bazooka-review.html">
+                    <div class="review-card">
+                        <img src="images/bazooka-poster.jpg" alt="Bazooka Movie Poster">
+                        <div class="review-content">
+                            <h3>Bazooka (2025)</h3>
+                            <p>Action thriller starring Mammootty and Gautham Vasudev Menon. A visually engaging yet narratively lacking gaming-inspired film.</p>
+                            <p class="rating">Rating: 2.5/5</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Thudarum -->
+                    <a href="thudarum.html">
+                    <div class="review-card">
+                        <img src="images/thudarum-poster.jpg" alt="Thudarum Movie Poster">
+                        <div class="review-content">
+                            <h3>Thudarum (2025)</h3>
+                            <p>An emotional drama that explores the complexities of human relationships with a powerful narrative and heartfelt performances.</p>
+                            <p class="rating">Rating: 4/5</p>
+                        </div>
+                    </div>
+
+                    <!-- Veera-dheera-sooran -->
+                    <a href="veera-dheera-sooran.html">
+                    <div class="review-card">
+                        <img src="images/veera-dheera-sooran-poster.jpg" alt="Veera Dheera Sooran: Part 2 Poster">
+                        <div class="review-content">
+                            <h3>Veera Dheera Sooran: Part 2 (2025)</h3>
+                            <p><em>Veera Dheera Sooran: Part 2</em> is a Tamil-language neo-noir action thriller film directed by S. U. Arun Kumar, starring Vikram in the titular role. The film explores themes of loyalty, revenge, and moral complexity as the protagonist, Kaali, is forced back into violence to protect his family. The movie features strong performances and intense action, making it an engaging watch for fans of gritty cinema.</p>
+                            <p class="rating">Rating: 4/5</p>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <!--Fighter 2024-->>
+                    <article class="review-card">
+                        <a href="review-fighter.html">
+                            <img src="images/fighter.jpg" alt="Fighter">
+                        </a>
+                        <h3><a href="review-fighter.html">Fighter (2024)</a></h3>
+                        <p>A cinematic marvel that brings aerial combat and intense patriotism to the big screen.</p>
+                    </article>
+                    
+                <!-- Uri: The Surgical Strike Review Card -->
+<a href="uri-the-surgical-strike.html">
+    <div class="review-card">
+        <img src="images/uri-poster.jpg" alt="Uri: The Surgical Strike Movie Poster">
+        <div class="review-content">
+            <h3>Uri: The Surgical Strike (2019)</h3>
+            <p>A gripping war drama based on the 2016 surgical strike by India, showcasing bravery and patriotism.</p>
+            <p class="rating">Rating: 4.5/5</p>
+        </div>
+    </div>
+</a>
+<!-- Rekhachithram Review Card -->
+<a href="rekhachithram.html">
+    <div class="review-card">
+        <img src="images/rekhachithram-poster.jpg" alt="Rekhachithram Movie Poster">
+        <div class="review-content">
+            <h3>Rekhachithram (2025)</h3>
+            <p>A gripping mystery thriller that explores the eerie intersection of cinema, history, and crime.</p>
+            <p class="rating">Rating: 4.5/5</p>
+        </div>
+    </div>
+</a>
+<!-- Retro Review Card -->
+<a href="retro-review.html">
+    <div class="review-card">
+        <img src="images/retro-poster.jpg" alt="Retro Movie Poster">
+        <div class="review-content">
+            <h3>Retro (2025)</h3>
+            <p>An extraordinary cinematic symphony of love, laughter, and war set in the vibrant 1970s, directed by Karthik Subbaraj. A must-watch masterpiece starring Suriya and Pooja Hegde.</p>
+            <p class="rating">Rating: 🌟🌟🌟🌟🌟 / 5</p>
+        </div>
+    </div>
+</a>
+<!-- Shaitaan Review Card -->
+<a href="shaitaan-review.html">
+    <div class="review-card">
+        <img src="images/shaitaan-poster.jpg" alt="Shaitaan Movie Poster">
+        <div class="review-content">
+            <h3>Shaitaan (2024)</h3>
+            <p>A chilling supernatural thriller that delves into black magic and family bonds, directed by Vikas Bahl. Stellar performances by R. Madhavan and Janki Bodiwala make this a gripping watch.</p>
+            <p class="rating">Rating: 🌟🌟🌟½ / 5</p>
+        </div>
+    </div>
+</a>
+<!-- Captain Miller Review Card -->
+<a href="captain-miller-review.html">
+    <div class="review-card">
+        <img src="images/captain-miller-poster.jpg" alt="Captain Miller Movie Poster">
+        <div class="review-content">
+            <h3>Captain Miller (2024)</h3>
+            <p>A gripping Tamil period action adventure set in the 1930s British Raj, directed by Arun Matheswaran. Dhanush’s powerful performance anchors this tale of rebellion and redemption.</p>
+            <p class="rating">Rating: 🌟🌟🌟🌟 / 5</p>
+        </div>
+    </div>
+</a>
+
+                    <!-- Add more review cards as needed -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2025 Movie Review | All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- Default snippet for navigation -->
+		
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/app.js"></script>
+    </div>
+</body>
+</html>
